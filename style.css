@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gill Sans', sans-serif;
+  height: 100vh;
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(
+    to top left,
+    rgb(0, 0, 0) 5%,
+    rgb(224, 25, 25) 100%
+  );
+}
+
+p {
+  font-size: 2.5rem;
+  color: #444;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+  color: #444;
+}
+
+#score {
+  position: absolute;
+  font-size: 5vh;
+  top: 2vh;
+  left: 0vw;
+  color: rgb(255, 255, 255);
+}
+
+#score-num {
+  font-size: 8vh;
+  position: absolute;
+  bottom: 0vh;
+  left: 2.8vw;
+}
+
+#score2 {
+  position: absolute;
+  top: 2vh;
+  font-size: 5vh;
+  right: 0vw;
+  color: rgb(255, 255, 255);
+}
+
+#score2-num {
+  position: absolute;
+  font-size: 8vh;
+  bottom: 0vh;
+  right: 1.8vw;
+}
+
+div {
+  position: relative;
+  width: 55vw;
+  height: 20vh;
+  left: 22.5vw;
+}
+
+img {
+  width: 15vw;
+  height: 35vh;
+  margin-top: 3.5vh;
+  margin-left: 7.88vw;
+}
+
+.btn-new {
+  position: absolute;
+  left: 27.4vw;
+  top: 9vh;
+  transform: translateX(-50%);
+  color: #444;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 400;
+  transition: all 0.2s;
+
+  background-color: white;
+  backdrop-filter: blur(10px);
+
+  padding: 0.7rem 2.5rem;
+  border-radius: 50rem;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+}
+
+.btn-new:active {
+  transform: translate(-50%, 3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.btn-new:focus {
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+
+  background-color: white;
+  padding: 3rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  font-size: 4rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
